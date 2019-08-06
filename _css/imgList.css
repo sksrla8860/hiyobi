@@ -2,8 +2,11 @@ html, body{font-size: 10px; height: 1200px; background-color: #212121;}
 *{box-sizing: border-box; text-decoration: none; }
 header{width: 100%; height: 80px; background-color: #333; }
 header > h1{}
-section{max-width: 1140px; width: 100%; margin: 0 auto; padding: 50px 0; }
+section{max-width: 1140px; width: 100%; margin: 0 auto; padding: 0 0 50px; }
 .noticeList{}/*공지리스트*/
+.noticeList > li{padding: 10px}
+.noticeList > li > a{font-size: 1.4rem; color: #fff; line-height: 1;}
+.noticeList > li > a > span{border-radius: 3px; padding: 2px 5px; margin-right: 5px; background-color: #FC6606; }
 .moneyBox{max-width: 700px; width: 100%; height: 100px; margin: 0 auto; background-color: #fff; }/*광고박스*/
 .moneyBox > a{width: 100%; height: 100%; display: block; }
 .moneyBox > a > span{width: 0; height: 0; display: block; overflow: hidden; }
@@ -58,12 +61,14 @@ footer > div > h2 > a{font-size: 3.2rem; color: rgba(255,255,255,.5); font-weigh
 footer > div > h6{color: #fff; text-align: center; font-size: 1.2rem; }
 /*  &footer  */
 
-@media all (max-width: 1080px){
+@media all and (max-width: 1080px){
 	
 }
-@media all (max-width: 760px){
-	
+@media all and (max-width: 760px){
+    html, body{font-size: 9px; }
+    .imgList > li{width: 31.333333%; margin: 1%; padding: 5px; }
 }
-@media all (max-width: 480px){
-	
+@media all and (max-width: 480px){
+    html, body{font-size: 8px; }
+    .imgList > li{width: 48%; margin: 1%; padding: 10px; }
 }
