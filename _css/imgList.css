@@ -1,8 +1,8 @@
-html, body{font-size: 10px; height: 1200px; }
+html, body{font-size: 10px; height: 1200px; background-color: #212121;}
 *{box-sizing: border-box; text-decoration: none; }
 header{width: 100%; height: 80px; background-color: #333; }
 header > h1{}
-section{max-width: 1140px; width: 100%; background-color: #524; margin: 0 auto; }
+section{max-width: 1140px; width: 100%; margin: 0 auto; padding: 50px 0; }
 .noticeList{}/*공지리스트*/
 .moneyBox{max-width: 700px; width: 100%; height: 100px; margin: 0 auto; background-color: #fff; }/*광고박스*/
 .moneyBox > a{width: 100%; height: 100%; display: block; }
@@ -18,33 +18,35 @@ section{max-width: 1140px; width: 100%; background-color: #524; margin: 0 auto; 
 .viewSelectBox > div > label{font-size: 1.6rem; line-height: 1; border: 2px solid #797979; color: #797979; border-radius: 50px; padding: 2px 15px; cursor: pointer; font-weight: bold; }
 .viewSelectBox > div > input:checked + label{border: 2px solid #88f; color: #88f; }
 .viewSelectBox > select{float: right; height: 100%; margin-right: 1%; }
+
 .imgList{}/*이미지 리스트*/
 .imgList:after{content: ''; display: block; clear: both; }
-.imgList > li{float: left; width: 23%; background-color: #ccc; margin: 1%; padding: 10px; }
+.imgList > li{float: left; width: 23%; margin: 1%; padding: 10px; }
 .imgList h4{text-overflow:ellipsis;white-space:nowrap;word-wrap:normal; overflow:hidden;}
 .typeList > li{text-overflow:ellipsis;white-space:nowrap;word-wrap:normal; overflow:hidden;}
-.imgList > li > a{width: 100%; height: 0; display: block; overflow: hidden; padding-bottom: 135%; margin-bottom: 5%; }
+.imgList > li > a{width: 100%; height: 0; display: block; overflow: hidden; padding-bottom: 135%; margin-bottom: 5%; border-radius: 5px;}
 .imgList > li > a > img{width: 100%; margin: 0 auto; display: block; }
-.imgList > li > h4{font-size: 1.8rem; font-weight: bold; margin-bottom: 10px;}
-.imgList > li > h4 > a{color: #333; }
-.imgList > li > h4 > a:hover{color: #337; }
+.imgList > li > h4{font-size: 1.8rem; font-weight: bold; margin-bottom: 10px; }
+.imgList > li > h4 > a{color: #fff; }
+.imgList > li > h4 > a:hover{color: #fff; }
+.textBox{margin-top: 20px; }
 .typeList{margin-bottom: 10px;}
-.typeList > li{margin: 5px 0; font-size: 1.4rem; }
+.typeList > li{margin: 5px 0; font-size: 1.4rem; color: #ccc; }
 .tagBox{width: 100%; height: 40px;-ms-overflow-style: none; overflow-x: auto; overflow-y: hidden; -ms-overflow-style: none; white-space: nowrap; background-color: transparent; padding-top: 3px; }
 /*.tagBox::-webkit-scrollbar {display:none;}*/
 .tagBox > ul{width: auto; height: 14px; }
 .tagBox:after{content: ''; display: block; clear: both; }
-.tagBox > ul > li{height: 100%; background-color: #240; padding: 0 5px; /*float: left; */border-radius: 5px; margin: 0; display: inline-block; }
+.tagBox > ul > li{height: 100%; background-color: #97f; padding: 0 5px; /*float: left; */border-radius: 5px; margin: 0; display: inline-block; }
 .tagBox > ul > li > a{width: 100%; height: 100%; display: block; color: #fff; font-size: 1.1rem; line-height: 14px; text-align: center; }
 
-.table-responsive{text-align: center; }
+.table-responsive{text-align: center; margin: 20px auto; position: relative; }
 .pagenavi{display: inline-block; vertical-align: middle; }
 .pagenavi:after{content: ''; display: block; clear: both; }
 .pagenavi > li{float: left; width: 24px; height: 30px; border: 1px solid #DEE2E6; }
 .pagenavi > li > a{width: 100%; height: 100%; display: block; font-size: 1.4rem; color: #fff; text-align: center; line-height: 28px; }
 .pagenavi > li.on{border: 1px solid #007bff; background-color: #007bff; }
 .pagenavi > li.on > a{color: #fff; }
-#pageselect{width: 60px; display: inline-block; height: 28px; vertical-align: middle; float: right; margin-right: 1%; }
+#pageselect{width: 60px; display: block; height: 28px; vertical-align: middle; position: absolute; margin-right: 1%; right: 0; top: 0; }
 
 /*  &section  */
 
